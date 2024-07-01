@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "build"
+        }
+      }
+    ],
+    "env": {
+      "NODE_VERSION": "16.14.0",
+      "NODE_OPTIONS": "--openssl-legacy-provider"
+    }
+  }
+  
