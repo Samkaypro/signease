@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Link, } from 'react-router-dom';
 import {Navbar, Nav,} from 'react-bootstrap';
-import { FaHome, FaInfo, FaBook, FaTrophy, FaGamepad} from 'react-icons/fa'
+import { FaHome, FaBook, FaTrophy, FaGamepad} from 'react-icons/fa'
 
 import { MyVerticallyCenteredModal } from './ModalDictionary';
 
