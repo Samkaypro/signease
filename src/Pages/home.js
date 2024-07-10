@@ -1,16 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  Card,
-  FormControl,
-  Button,
-  Container,
-  Accordion,
-} from 'react-bootstrap';
+import { FormControl, Button, Container, Accordion } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaCog } from 'react-icons/fa';
 import Logo from "../Components/Logo";
-import Avatar from "../images/avatar.jpeg"
+import Avatar from "../images/avatar.jpeg";
 
 export function Home() {
   const [name, setName] = useState('');
@@ -52,7 +46,7 @@ export function Home() {
     position: 'sticky',
     top: 0,
     background: 'white',
-    padding: '4px',
+    padding: '19px',
     zIndex: 100,
   };
 
@@ -92,38 +86,37 @@ export function Home() {
                 <FaCog />
               </div>
             </div>
-            <div className="my-2">Select your language:</div>
             <Accordion defaultActiveKey="0">
-              <Card>
-                <Accordion.Toggle as={Card.Header} eventKey="0">
+              <div style={styles.banner}>
+                <Accordion.Toggle as="div" eventKey="0" style={styles.header}>
                   American Sign Language
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey="0">
-                  <Card.Body>
-                    <Link to="/learningPage" className="mr-2">
-                      <Button style={{ backgroundColor: '#6800F4' }}>
-                        Learn
-                      </Button>
-                    </Link>
-                    <Link to="/tutorial">
-                      <Button style={{ backgroundColor: '#6800F4' }}>
+                  <div style={styles.body}>
+                    <Link to="/tutorial" style={styles.link}>
+                      <Button style={styles.button}>
                         Tutorial
                       </Button>
                     </Link>
-                  </Card.Body>
+                    <Link to="/learningPage" style={styles.link}>
+                      <Button style={styles.button}>
+                        Test
+                      </Button>
+                    </Link>
+                  </div>
                 </Accordion.Collapse>
-              </Card>
+              </div>
             </Accordion>
 
             <div className="my-4">
               <Button
-                style={{ backgroundColor: '#6800F4' }}
+                style={{ backgroundColor: '#121212' }}
                 onClick={logOut}
                 href="/"
               >
                 <FontAwesomeIcon
                   icon="sign-out-alt"
-                  style={{ backgroundColor: '#6800F4' }}
+                  style={{ backgroundColor: '#121212' }}
                 />{' '}
                 Sign out
               </Button>
@@ -131,26 +124,94 @@ export function Home() {
           </>
         )}
         {!loggedIn && (
-          <>
-            <div className="display-4"></div>
+          <div style={styles.welcomeContainer}>
             <div className="display-4">Welcome to</div>
-            <div className="display-4 text-primary">
-              <div style={{ color: "#6800F4" }}>
-                <Logo />
-                <span style={{ marginLeft: '0.4em' }}>SignEase</span>
-              </div>
+            <div style={styles.logoContainer}>
+              <Logo />
+              <span style={styles.logoText}>SignEase</span>
             </div>
             <div className="fs-3 my-2">What's your name?</div>
             <FormControl
               className="my-2"
+              placeholder="Enter your name"
               aria-label="Recipient's username"
               aria-describedby="basic-addon2"
               onChange={handleButton}
+              style={styles.input}
             />
-            <Button disabled={disabled} variant="outline-primary" onClick={handleSubmit}>Next</Button>
-          </>
+            <Button disabled={disabled} onClick={handleSubmit} style={styles.nextButton}>
+              Next
+            </Button>
+          </div>
         )}
       </Container>
     </>
   );
 }
+
+const styles = {
+  banner: {
+    margin: '0px',
+    borderRadius: '8px',
+    overflow: 'hidden',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+  },
+  header: {
+    backgroundColor: '#121212',
+    color: 'white',
+    padding: '15px',
+    textAlign: 'center',
+    fontSize: '21px',
+    fontWeight: 'bold',
+    cursor: 'pointer',
+  },
+  body: {
+    padding: '20px',
+    backgroundColor: '#121212',
+    textAlign: 'center',
+  },
+  button: {
+    backgroundColor: 'white',
+    color: '#121212',
+    border: 'none',
+    borderRadius: '40px',
+    padding: '10px 20px',
+    margin: '10px',
+    fontSize: '20px',
+  },
+  link: {
+    textDecoration: 'none',
+  },
+  welcomeContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    textAlign: 'center',
+    color: '#121212',
+  },
+  logoContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    marginBottom: '20px',
+  },
+  logoText: {
+    color: '#121212',
+    marginLeft: '0.4em',
+    fontSize: '24px',
+    fontWeight: 'bold',
+  },
+  input: {
+    width: '80%',
+    margin: '10px auto',
+    padding: '10px',
+    borderRadius: '10px',
+    borderColor: '#121212',
+  },
+  nextButton: {
+    backgroundColor: '#121212',
+    color: 'white',
+    border: 'none',
+    borderRadius: '10px',
+    padding: '10px 20px',
+  },
+};

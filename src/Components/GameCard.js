@@ -3,6 +3,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import { Container, Button, Row, Col, Card, Alert } from 'react-bootstrap';
 import WebcamCapture from './WebcamCapture';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaBackwardFast, FaForwardFast } from "react-icons/fa6";
 import api from '../utils/api';
 import './gameCard.css';
 
@@ -64,17 +65,17 @@ export default function GameCard(props) {
         {picture ? <Card className="ml-3 mt-2 mt-sm-0"> <img alt='' src={picture}/>  </Card>: <></>}
 			</Row>
 			<Row className='justify-content-around'>
-				<Button onClick={() => prev()} style={{ backgroundColor: '#6800F4' }}>
-					<FontAwesomeIcon icon='fast-backward' />
+				<Button onClick={() => prev()} style={{ backgroundColor: '#121212' }}>
+					<FaBackwardFast />
 				</Button>
-				<Button onClick={() => reset()} variant='danger'>
+				<Button onClick={() => reset()} variant='success'>
 					<FontAwesomeIcon icon='redo' />
 				</Button>
 				<Button
 					disabled={!success}
 					onClick={() => next()}
-					style={{ backgroundColor: '#6800F4' }}>
-					<FontAwesomeIcon icon='fast-forward' />
+					style={{ backgroundColor: '#121212' }}>
+					<FaForwardFast />
 				</Button>
 			</Row>
 			<Row

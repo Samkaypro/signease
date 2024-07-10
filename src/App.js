@@ -7,7 +7,7 @@ import Main from "./Pages/Main";
 function App() {
 
   return (
-    <Container fluid="sm" className="pb-5">
+    <Container fluid="sm" className="pb-1">
       <Main/>
     </Container>
   );
