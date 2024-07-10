@@ -95,7 +95,7 @@ export function Home() {
                   <div style={styles.body}>
                     <Link to="/tutorial" style={styles.link}>
                       <Button style={styles.button}>
-                        Tutorial
+                      Lessons
                       </Button>
                     </Link>
                     <Link to="/learningPage" style={styles.link}>

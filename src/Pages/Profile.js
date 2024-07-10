@@ -21,8 +21,8 @@ export function Profile(props) {
       </Card>
       <Card style={styles.statsCard}>
         <Card.Body className="text-center">
-          <Card.Text style={styles.statsText}>Completed Lessons: 10</Card.Text>
-          <Card.Text style={styles.statsText}>Total Time Spent: 2 hours</Card.Text>
+          <Card.Text style={styles.statsText}>Completed Lessons: </Card.Text>
+          <Card.Text style={styles.statsText}>Total Time Spent: 0 hours</Card.Text>
         </Card.Body>
       </Card>
     </Container>
