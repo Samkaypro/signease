@@ -20,7 +20,6 @@ export function Navigation() {
         <Nav className="d-flex justify-content-around py-2 container">
             <Link to='/' className="d-flex flex-column align-items-center" style={{color:'#F8F8F8'}}>
             <IoHomeOutline size="2rem"/>
-
                 <div className="d-none d-md-block" style={{fontWeight:'bold'}}>HOME</div>
             </Link>
             <Link to='/learningPage' className="d-flex flex-column align-items-center" style={{color:'#F8F8F8'}}>

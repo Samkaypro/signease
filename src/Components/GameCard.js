@@ -8,7 +8,7 @@ import api from '../utils/api';
 import './gameCard.css';
 
 export default function GameCard(props) {
-	const { letter, position, total, next, prev , picture} = props;
+	const { letter, position, total, next, prev, picture } = props;
 
 	const [activateWebcam, setActivateWebcam] = useState(true);
 	const [success, setSuccess] = useState(null);
@@ -21,18 +21,23 @@ export default function GameCard(props) {
 		}, 0);
 	};
 
-	const handleUpload = async image => {
+	const handleUpload = async (image) => {
 		const res = await api(image, letter);
-		console.log(image);
-		if (res.toUpperCase() === letter.toUpperCase()) {
+		console.log("Detected Letter:", res); // Log the detected letter
+		if (res && res.toUpperCase() === letter.toUpperCase()) {
 			setSuccess(true);
+			setTimeout(() => {
+				next();
+			}, 1000); // Automatically move to the next letter after 1 second
 		} else {
 			setSuccess(false);
 		}
 	};
+
 	React.useEffect(() => {
 		reset();
 	}, [letter]);
+
 	return (
 		<Container>
 			<Row className='instructions'>

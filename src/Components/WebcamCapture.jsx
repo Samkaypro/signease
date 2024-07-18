@@ -2,12 +2,7 @@ import React from "react";
 import { Spinner } from "react-bootstrap";
 import Webcam from "react-webcam";
 
-const WebcamCapture = ({
-  photoProcessor,
-  timerSeconds = 4,
-  multiple = false,
-  size = 350,
-}) => {
+const WebcamCapture = ({ photoProcessor, timerSeconds = 4, multiple = false, size = 350 }) => {
   const [deviceId, setDeviceId] = React.useState({});
   const [cameraLoader, setCameraLoader] = React.useState(true);
   const [devices, setDevices] = React.useState([]);
@@ -34,8 +29,7 @@ const WebcamCapture = ({
   };
 
   const handleDevices = React.useCallback(
-    (mediaDevices) =>
-      setDevices(mediaDevices.filter(({ kind }) => kind === "videoinput")),
+    (mediaDevices) => setDevices(mediaDevices.filter(({ kind }) => kind === "videoinput")),
     [setDevices]
   );
 
@@ -89,10 +83,7 @@ const WebcamCapture = ({
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            boxShadow:
-              timeLeft < 0
-                ? "inset 0px 0px 20px 10px rgba(255,255,255,0.6)"
-                : "",
+            boxShadow: timeLeft < 0 ? "inset 0px 0px 20px 10px rgba(255,255,255,0.6)" : "",
           }}
         >
           {cameraLoader && (
@@ -105,7 +96,7 @@ const WebcamCapture = ({
               style={{
                 fontSize: "7rem",
                 color: "white",
-                "WebkitTextStroke": "2px black",
+                WebkitTextStroke: "2px black",
               }}
             >
               {timeLeft}
@@ -125,17 +116,6 @@ const WebcamCapture = ({
           )}
         </div>
       </div>
-
-      {/* <div>
-          {devices.map((device, key) => (
-            <button
-              key={device.deviceId}
-              onClick={() => setDeviceId(device.deviceId)}
-            >
-              {device.label || `Device ${key + 1}`}
-            </button>
-          ))}
-      </div> */}
     </>
   );
 };

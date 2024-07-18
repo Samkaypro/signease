@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FormControl, Button, Container, Accordion } from 'react-bootstrap';
+import { FormControl, Button, Container, Accordion, Card } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaCog } from 'react-icons/fa';
 import Logo from "../Components/Logo";
@@ -95,12 +95,12 @@ export function Home() {
                   <div style={styles.body}>
                     <Link to="/tutorial" style={styles.link}>
                       <Button style={styles.button}>
-                      Lessons
+                        Tutorial
                       </Button>
                     </Link>
                     <Link to="/learningPage" style={styles.link}>
                       <Button style={styles.button}>
-                        Test
+                        Play game
                       </Button>
                     </Link>
                   </div>
@@ -109,18 +109,33 @@ export function Home() {
             </Accordion>
 
             <div className="my-4">
-              <Button
-                style={{ backgroundColor: '#121212' }}
-                onClick={logOut}
-                href="/"
-              >
-                <FontAwesomeIcon
-                  icon="sign-out-alt"
-                  style={{ backgroundColor: '#121212' }}
-                />{' '}
-                Sign out
-              </Button>
+
             </div>
+
+            {/* Additional Content */}
+            <Card style={styles.card}>
+              <Card.Body>
+                <Link to="/tutorial" style={styles.link}>
+                <Card.Title>Tutorial</Card.Title>
+                <Card.Text>
+                  Learn how to sign Alphabet<br />
+                  from letter A to Z with a guide.
+                </Card.Text>
+                </Link>
+              </Card.Body>
+            </Card>
+            <Card style={styles.card}>
+              <Card.Body>
+                <Link to="/learningPage" style={styles.link}>
+                <Card.Title>Play game</Card.Title>
+                <Card.Text>
+                  Sign the ASL language<br />
+                  from letter A to Z without <br />
+                  a guide to earn xp.
+                </Card.Text>
+                </Link>
+              </Card.Body>
+            </Card>
           </>
         )}
         {!loggedIn && (
@@ -181,6 +196,7 @@ const styles = {
   },
   link: {
     textDecoration: 'none',
+    color: 'black',
   },
   welcomeContainer: {
     display: 'flex',
@@ -195,7 +211,7 @@ const styles = {
     marginBottom: '20px',
   },
   logoText: {
-    color: '#121212',
+    color: '#6800F4',
     marginLeft: '0.4em',
     fontSize: '24px',
     fontWeight: 'bold',
@@ -214,4 +230,12 @@ const styles = {
     borderRadius: '10px',
     padding: '10px 20px',
   },
+  card: {
+    margin: '10px 0',
+    borderRadius: '8px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+  },
+
 };
+
+export default Home;

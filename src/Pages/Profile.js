@@ -1,9 +1,16 @@
 import React from 'react';
 import { Button, Card, Container } from 'react-bootstrap';
 import Avatar from '../images/avatar.jpeg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export function Profile(props) {
-	const name = localStorage.getItem('name');
+  const name = localStorage.getItem('name');
+
+  const logOut = () => {
+    localStorage.removeItem('name');
+    window.location.href = '/';
+  };
+
   return (
     <Container className="d-flex flex-column align-items-center py-4" style={styles.container}>
       <Card style={styles.card}>
@@ -16,12 +23,18 @@ export function Profile(props) {
           <Card.Text style={styles.text}>
             Progress: 0%
           </Card.Text>
-          <Button style={styles.button} href="/learningPage">Keep Learning</Button>
+          <div style={styles.buttonContainer}>
+            <Button style={styles.button} href="/learningPage">Keep Learning</Button>
+            <Button style={styles.signOutButton} onClick={logOut}><FontAwesomeIcon
+              icon="sign-out-alt"
+              style={{ backgroundColor: '#121212' }}
+            />{' '}Sign out</Button>
+          </div>
         </Card.Body>
       </Card>
       <Card style={styles.statsCard}>
         <Card.Body className="text-center">
-          <Card.Text style={styles.statsText}>Completed Lessons: </Card.Text>
+          <Card.Text style={styles.statsText}>Completed Lessons: 0</Card.Text>
           <Card.Text style={styles.statsText}>Total Time Spent: 0 hours</Card.Text>
         </Card.Body>
       </Card>
@@ -31,8 +44,8 @@ export function Profile(props) {
 
 const styles = {
   container: {
-        height: '100vh',
-		paddingTop: '20px',
+    height: '100vh',
+    paddingTop: '20px',
   },
   card: {
     width: '100%',
@@ -56,7 +69,21 @@ const styles = {
     fontSize: '16px',
     color: '#6c757d',
   },
+  buttonContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
   button: {
+    backgroundColor: '#121212',
+    color: 'white',
+    border: 'none',
+    borderRadius: '4px',
+    padding: '10px 20px',
+    fontSize: '16px',
+    marginBottom: '10px',
+  },
+  signOutButton: {
     backgroundColor: '#121212',
     color: 'white',
     border: 'none',
