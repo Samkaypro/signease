@@ -3,11 +3,12 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import { Container, Button, Row, Col, Card, Alert } from 'react-bootstrap';
 import WebcamCapture from './WebcamCapture';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaBackwardFast, FaForwardFast } from "react-icons/fa6";
 import api from '../utils/api';
 import './gameCard.css';
 
 export default function GameCard(props) {
-	const { letter, position, total, next, prev , picture} = props;
+	const { letter, position, total, next, prev, picture } = props;
 
 	const [activateWebcam, setActivateWebcam] = useState(true);
 	const [success, setSuccess] = useState(null);
@@ -20,18 +21,23 @@ export default function GameCard(props) {
 		}, 0);
 	};
 
-	const handleUpload = async image => {
+	const handleUpload = async (image) => {
 		const res = await api(image, letter);
-		console.log(image);
-		if (res.toUpperCase() === letter.toUpperCase()) {
+		console.log("Detected Letter:", res); // Log the detected letter
+		if (res && res.toUpperCase() === letter.toUpperCase()) {
 			setSuccess(true);
+			setTimeout(() => {
+				next();
+			}, 1000); // Automatically move to the next letter after 1 second
 		} else {
 			setSuccess(false);
 		}
 	};
+
 	React.useEffect(() => {
 		reset();
 	}, [letter]);
+
 	return (
 		<Container>
 			<Row className='instructions'>
@@ -64,17 +70,17 @@ export default function GameCard(props) {
         {picture ? <Card className="ml-3 mt-2 mt-sm-0"> <img alt='' src={picture}/>  </Card>: <></>}
 			</Row>
 			<Row className='justify-content-around'>
-				<Button onClick={() => prev()} style={{ backgroundColor: '#6800F4' }}>
-					<FontAwesomeIcon icon='fast-backward' />
+				<Button onClick={() => prev()} style={{ backgroundColor: '#121212' }}>
+					<FaBackwardFast />
 				</Button>
-				<Button onClick={() => reset()} variant='danger'>
+				<Button onClick={() => reset()} variant='success'>
 					<FontAwesomeIcon icon='redo' />
 				</Button>
 				<Button
 					disabled={!success}
 					onClick={() => next()}
-					style={{ backgroundColor: '#6800F4' }}>
-					<FontAwesomeIcon icon='fast-forward' />
+					style={{ backgroundColor: '#121212' }}>
+					<FaForwardFast />
 				</Button>
 			</Row>
 			<Row

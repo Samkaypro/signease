@@ -8,6 +8,7 @@ import { LearningPage } from "./LearningPage";
 import { About } from "./About";
 import { Profile } from "./Profile";
 import { TutorialPage } from "./TutorialPage";
+import { DictionaryPage } from "./Dictionary";
 // import "./Components/FontAwesome";
 
 function Main() {
@@ -17,9 +18,9 @@ function Main() {
         <Navigation />
         <Switch>
           <Route exact path="/" component={Home}></Route>
+          <Route exact path="/dictionary" component={DictionaryPage}></Route>
           <Route exact path="/learningPage" component={LearningPage}></Route>
           <Route exact path="/profile" component={Profile}></Route>
-          <Route exact path="/about" component={About}></Route>
           <Route exact path ="/tutorial" component={TutorialPage}/>
         </Switch>
       </Router>

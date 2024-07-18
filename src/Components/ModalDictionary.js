@@ -16,7 +16,7 @@ export function MyVerticallyCenteredModal(props) {
 					ASL DICTIONARY
 				</Modal.Title>
 			</Modal.Header>
-			<Modal.Body>
+			<Modal.Body>   
 				<Dictionary />
 			</Modal.Body>
 			<Modal.Footer>

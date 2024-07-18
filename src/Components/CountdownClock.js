@@ -28,7 +28,7 @@ export class CountdownClock extends React.Component {
         return (<>
         <Row  className="justify-content-center">
           <Col sm={3}>
-          <span className="p-3" style ={{border: '4px solid blue', width:'100px', height:'100px', borderRadius:'100%'}}>{this.state.seconds}...</span>
+          <span className="p-3" style ={{border: '4px solid green', width:'100px', height:'100px', borderRadius:'100%'}}>{this.state.seconds}...</span>
           </Col>
         </Row>
         <Row className="justify-content-center">

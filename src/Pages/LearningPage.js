@@ -47,9 +47,10 @@ export function LearningPage() {
     }
   };
 
-  useEffect(()=> {
-    return <Profile levels={position}/>
-  }, [position])
+  useEffect(() => {
+    // Ensures the Profile component updates correctly based on the position state
+    <Profile levels={position} />;
+  }, [position]);
 
   return (
     <>
