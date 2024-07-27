@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/signease/static/css/main.b23c0c80.chunk.css",
-    "main.js": "/signease/static/js/main.f617bbe1.chunk.js",
-    "main.js.map": "/signease/static/js/main.f617bbe1.chunk.js.map",
-    "runtime-main.js": "/signease/static/js/runtime-main.05554054.js",
-    "runtime-main.js.map": "/signease/static/js/runtime-main.05554054.js.map",
+    "main.js": "/signease/static/js/main.47b08423.chunk.js",
+    "main.js.map": "/signease/static/js/main.47b08423.chunk.js.map",
+    "runtime-main.js": "/signease/static/js/runtime-main.93b34e8b.js",
+    "runtime-main.js.map": "/signease/static/js/runtime-main.93b34e8b.js.map",
     "static/css/2.44d809a4.chunk.css": "/signease/static/css/2.44d809a4.chunk.css",
-    "static/js/2.a357bcc1.chunk.js": "/signease/static/js/2.a357bcc1.chunk.js",
-    "static/js/2.a357bcc1.chunk.js.map": "/signease/static/js/2.a357bcc1.chunk.js.map",
-    "static/js/3.0d240b87.chunk.js": "/signease/static/js/3.0d240b87.chunk.js",
-    "static/js/3.0d240b87.chunk.js.map": "/signease/static/js/3.0d240b87.chunk.js.map",
+    "static/js/2.60acd098.chunk.js": "/signease/static/js/2.60acd098.chunk.js",
+    "static/js/2.60acd098.chunk.js.map": "/signease/static/js/2.60acd098.chunk.js.map",
+    "static/js/3.5aa565fb.chunk.js": "/signease/static/js/3.5aa565fb.chunk.js",
+    "static/js/3.5aa565fb.chunk.js.map": "/signease/static/js/3.5aa565fb.chunk.js.map",
     "index.html": "/signease/index.html",
     "static/css/2.44d809a4.chunk.css.map": "/signease/static/css/2.44d809a4.chunk.css.map",
     "static/css/main.b23c0c80.chunk.css.map": "/signease/static/css/main.b23c0c80.chunk.css.map",
-    "static/js/2.a357bcc1.chunk.js.LICENSE.txt": "/signease/static/js/2.a357bcc1.chunk.js.LICENSE.txt",
+    "static/js/2.60acd098.chunk.js.LICENSE.txt": "/signease/static/js/2.60acd098.chunk.js.LICENSE.txt",
     "static/media/letterB.319b45ff.png": "/signease/static/media/letterB.319b45ff.png",
     "static/media/letterC.21ad8fc6.png": "/signease/static/media/letterC.21ad8fc6.png",
     "static/media/letterD.cf803bc1.png": "/signease/static/media/letterD.cf803bc1.png",
@@ -36,10 +36,10 @@
     "static/media/letterZ.ae5dcdca.png": "/signease/static/media/letterZ.ae5dcdca.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.05554054.js",
+    "static/js/runtime-main.93b34e8b.js",
     "static/css/2.44d809a4.chunk.css",
-    "static/js/2.a357bcc1.chunk.js",
+    "static/js/2.60acd098.chunk.js",
     "static/css/main.b23c0c80.chunk.css",
-    "static/js/main.f617bbe1.chunk.js"
+    "static/js/main.47b08423.chunk.js"
   ]
 }
