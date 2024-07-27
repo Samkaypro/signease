@@ -1,15 +1,14 @@
 import { useState } from 'react';
-import { Button, Card, Container, Row, Col } from 'react-bootstrap';
+import { Card, Container, Row, Col } from 'react-bootstrap';
 import alphabet from './abc-pics';
 import FlippingCard from './FlippinCard';
-import './gameCard.css'; // Ensure you import the CSS file
+import './gameCard.css'; 
 
 export const Dictionary = () => {
   const [flipAll, setFlipAll] = useState(false);
 
   return (
-    <Container>
-      <Button style={{ backgroundColor: '#121212', color: 'white' }} onClick={() => setFlipAll(!flipAll)}>Reveal all</Button>
+    <Container >
       {alphabet && (
         <Row className="text-center justify-content-center no-gutters">
           {alphabet.map(letter => (
@@ -28,6 +27,7 @@ export const Dictionary = () => {
               </FlippingCard>
             </Col>
           ))}
+          {/* <Button style={{ backgroundColor: '#121212', color: 'white', PaddingBottom: '100px' }} onClick={() => setFlipAll(!flipAll)}>Reveal all</Button> */}
         </Row>
       )}
     </Container>

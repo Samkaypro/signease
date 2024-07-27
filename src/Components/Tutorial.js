@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import alphabet from './abc-pics';  // Importing the alphabet images
-import GameCard from './GameCard';    // Importing the GameCard component
+import alphabet from './abc-pics'; 
+import GameCard from './GameCard';   
 
 const tutorial = [
   "A", "B", "C", "D", "E", "F", "G", "H", "I",
@@ -9,29 +9,29 @@ const tutorial = [
 ];
 
 export function Tutorial() {
-  const [position, setPosition] = useState(0);  // State to track current letter position
+  const [position, setPosition] = useState(0); 
 
   const nextPosition = () => {
     if (position < tutorial.length - 1) {
-      setPosition(position + 1);  // Increment position
+      setPosition(position + 1);  
     }
   };
 
   const prevPosition = () => {
     if (position > 0) {
-      setPosition(position - 1);  // Decrement position
+      setPosition(position - 1); 
     }
   };
 
   return (
     <>
       <GameCard
-        letter={tutorial[position]}  // Current letter
-        position={position}          // Current position
-        total={tutorial.length - 1}  // Total number of letters
-        next={nextPosition}          // Function to go to the next letter
-        prev={prevPosition}          // Function to go to the previous letter
-        picture={alphabet[position].src} // Image source from alphabet
+        letter={tutorial[position]}  
+        position={position}          
+        total={tutorial.length - 1}  
+        next={nextPosition}           
+        prev={prevPosition}          
+        picture={alphabet[position].src}
       />
     </>
   );

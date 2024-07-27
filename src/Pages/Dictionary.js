@@ -2,11 +2,20 @@ import React from 'react';
 import { Dictionary } from '../Components/dictionary';
 
 export function DictionaryPage(props) {
+	const topPad = {
+		paddingTop: '40px',
+		textAlign: 'center'
+	};
+
 	return (
 		<>
-			<h1 style={{padding: '15px'}}>ASL DICTIONARY</h1>
-			<Dictionary/>
+			<div style={topPad}>
+				<h2>ASL DICTIONARY</h2>
+			</div>
+			<Dictionary />
+
 		</>
-		
+
+
 	);
 }

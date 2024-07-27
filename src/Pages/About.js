@@ -7,13 +7,13 @@ export function About() {
 				<Col></Col>
 				<Col sm={8}>
 					<Jumbotron>
-						<h2>About Sign & Shoot </h2>
+						<h2>About Signease </h2>
 						<p>
 							<br />
 							<h3> Welcome to our community!</h3>
 							<br />
 							<br />
-							<i>Sign & Shoot</i> is designed to teach American Sign Language to
+							<i>Signease</i> is designed to teach American Sign Language to
 							everyone. <br />
 							Together, we will build a community, and elevate bridges of
 							communication to allow main stream culture to merge with the
