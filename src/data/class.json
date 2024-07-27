@@ -1,0 +1,22 @@
+{
+    "titles": [
+        "Join as a Tutor",
+        "Join as a Student"
+    ],
+    "data": [
+        {
+            "title": "Join as a Tutor",
+            "image": "",
+            "list": [
+                "Coming Soon..."
+            ]
+        },
+        {
+            "title": "Join as a Student",
+            "image": "",
+            "list": [
+                "Coming Soon..." 
+            ]
+        }
+    ]
+}

@@ -1,0 +1,452 @@
+{
+    "titles": [
+        "Help",
+        "All Done",
+        "Please",
+        "More",
+        "Good",
+        "Happy",
+        "Sad",
+        "Sleep",
+        "Drink",
+        "Eat",
+        "Cheese",
+        "Cookie",
+        "Spoon",
+        "Apple",
+        "Diaper",
+        "Music",
+        "Book",
+        "Doll",
+        "Ballon",
+        "Hat",
+        "Jacket",
+        "Mummy",
+        "Daddy",
+        "Grandma",
+        "Grandpa",
+        "Brother",
+        "Sister",
+        "Baby",
+        "Rain",
+        "Cat",
+        "Dog",
+        "House",
+        "Store",
+        "Car",
+        "Stroller",
+        "Kiss",
+        "Pain",
+        "Open",
+        "Close",
+        "Cry",
+        "Play",
+        "Stop",
+        "Go",
+        "Laugh"
+    ],
+    "data": [
+        {
+            "title": "Help",
+            "image": "/videos/help.webm",
+            "list": [
+                "Hold one hand, palm up, in front of you.",
+                "Curl your other hand into a fist with your thumb pointing up. Place it on top of your other palm.",
+                "Raise your palm and fist a few inches up"
+            ]
+        },
+        {
+            "title": "All Done",
+            "image": "/videos/alldone.webm",
+            "list": [
+                "Clench both hands into fists in front of your body, knuckles pointing toward you.",
+                "Turn hands outward, extending your fingers."
+            ]
+        },
+        {
+            "title": "Please",
+            "image": "/videos/please.webm",
+            "list": [
+                "With your palm on your chest, rub your hand in a circle."
+            ]
+        },
+        {
+            "title": "More",
+            "image": "/videos/more.webm",
+            "list": [
+                "Squeeze together the tips of your fingers on each hand to form two points.",
+                "Touch the tips of each point together, then separate.",
+                "Repeat step two a few times."
+            ]
+        },
+        {
+            "title": "Good",
+            "image": "/videos/good.webm",
+            "list": [
+                "Place one hand palm up in front of you and another hand (palm facing your body) at your chin.",
+                "Lower the hand at your face to meet the hand in front of you."
+            ]
+        },
+        {
+            "title": "Happy",
+            "image": "/videos/happy.webm",
+            "list": [
+                "Hold one hand flush against your chest.",
+                "Brush that hand up and tilt it outward at about 45 degrees from your body."
+            ]
+        },
+        {
+            "title": "Sad",
+            "image": "/videos/sad.webm",
+            "list": [
+                "With your head tilted down, place both hands in front of your face with fingers spread apart.",
+                "Drop your fingers down in front of your chest."
+            ]
+        },
+        {
+            "title": "Sleep",
+            "image": "/videos/sleep.webm",
+            "list": [
+                "Place one hand in front of your face, palm facing you.",
+                "Close your hand to a fist and drop it to your chin, closing your eyes.",
+                "Drag that fist downward, eyes still closed."
+            ]
+        },
+        {
+            "title": "Drink",
+            "image": "/videos/drink.webm",
+            "list": [
+                "Hold your hand up to your mouth as if you were drinking from a glass.",
+                "Tilt head back as if taking a sip."
+            ]
+        },
+        {
+            "title": "Eat",
+            "image": "/videos/eat.webm",
+            "list": [
+                "Squeeze the tips of your fingers together to form a point, and place that hand in front of your pursed lips.",
+                "Bring your hand away from your mouth, then back to it."
+            ]
+        },
+        {
+            "title": "Cheese",
+            "image": "/videos/cheese.webm",
+            "list": [
+                "Place your hands, palms touching, in front of you.",
+                "With the heels of your palms touching, rotate your hands back and forth."
+            ]
+        },
+        {
+            "title": "Cookie",
+            "image": "/videos/cookie.webm",
+            "list": [
+                "Put one hand in front of you, palm facing up.",
+                "Cup your other hand and place your fingertips on top of the other palm.",
+                "Rotate your hand back and forth."
+            ]
+        },
+        {
+            "title": "Spoon",
+            "image": "/videos/spoon.webm",
+            "list": [
+                "Cup one hand, palm facing up, in front of you.",
+                "Using the pointer and middle fingers of your other hand, pretend to scoop out of your cupped hand."
+            ]
+        },
+        {
+            "title": "Apple",
+            "image": "/videos/apple.webm",
+            "list": [
+                "Make your hand into a fist, keeping the knuckle of your pointer finger extended a little farther than the other fingers.",
+                "Place that hand on your cheek near your mouth and rotate that hand back and forth."
+            ]
+        },
+        {
+            "title": "Bed",
+            "image": "/videos/bed.webp",
+            "list": [
+                "Tilting your head to the side with your eyes closed, lay your cheek against the palm of your hand."
+            ]
+        },
+        {
+            "title": "Blanket",
+            "image": "/videos/blanket.webp",
+            "list": [
+                "Pull both hands up from your waist to end with both fists clutching in front of you to mimic the motion of pulling up a blanket."
+            ]
+        },
+        {
+            "title": "Diaper",
+            "image": "/videos/diaper.webm",
+            "list": [
+                "With your hands at your side, extend your pointer and middle fingers, tucking in the rest of your fingers.",
+                "Tap your extended fingers against your thighs."
+            ]
+        },
+        {
+            "title": "Music",
+            "image": "/videos/music.webm",
+            "list": [
+                "Extend one arm.",
+                "With your palm facing your bicep and forearm, sweep your opposite hand along your arm in an arc.",
+                "Continue sweeping your hand until it reaches your palm, then sweep it in the other direction."
+            ]
+        },
+        {
+            "title": "Book",
+            "image": "/videos/book.webm",
+            "list": [
+                "Hold both palms together in front of you.",
+                "Using the inside edges of your palms as a hinge, tilt your hands open, so your palms face up."
+            ]
+        },
+        {
+            "title": "Doll",
+            "image": "/videos/doll.webm",
+            "list": [
+                "In front of your nose, curl your pointer finger in and tuck in the rest of the fingers on that hand.",
+                "Tilt your head down, allowing the hand to follow."
+            ]
+        },
+        {
+            "title": "Ballon",
+            "image": "/videos/ballon.webm",
+            "list": [
+                "Curl your fingers to touch and arrange your hands, one on top of the other, in front of your mouth. Position your hands and head, so they're tilted upward.",
+                "Expand your hands as if holding on to an inflated balloon."
+            ]
+        },
+        {
+            "title": "Hat",
+            "image": "/videos/hat.webm",
+            "list": [
+                "Place a hand flat on top of your head",
+                "Raise and lower it."
+            ]
+        },
+        {
+            "title": "Jacket",
+            "image": "/videos/jacket.webm",
+            "list": [
+                "Clutch both hands into fists in front of your shoulders.",
+                "Mimicking the motion of putting on a jacket, bring your hands in front of your chest."
+            ]
+        },
+        {
+            "title": "Pacifier",
+            "image": "/videos/pacifier.webp",
+            "list": [
+                "Form your index finger into a hook and place it in front of your mouth."
+            ]
+        },
+        {
+            "title": "Mummy",
+            "image": "mummy.webm",
+            "list": [
+                "Spread out the fingers of one hand.",
+                "Touch the thumb of that hand to the side of the chin several times"
+            ]
+        },
+        {
+            "title": "Daddy",
+            "image": "/videos/daddy.webm",
+            "list": [
+                "Spread out the fingers of one hand.",
+                "Touch the thumb of that hand to the side of the forehead several times."
+            ]
+        },
+        {
+            "title": "Grandma",
+            "image": "/videos/grandma.webm",
+            "list": [
+                "Spread out the fingers of one hand.",
+                "Touch the thumb of that hand to the side of the chin.",
+                "Make two sweeping arcs in front of you with that hand."
+            ]
+        },
+        {
+            "title": "Grandpa",
+            "image": "/videos/grandpa.webm",
+            "list": [
+                "Spread out the fingers of one hand.",
+                "Touch the thumb of that hand to the side of the forehead.",
+                "Make two sweeping arcs in front of you with that hand."
+            ]
+        },
+        {
+            "title": "Brother",
+            "image": "/videos/brother.webm",
+            "list": [
+                "Start with your hand open at the side of your forehead.",
+                "Close that hand as if you were grabbing the brim of a baseball cap.",
+                "Meet the index finger of that hand to the index finger of your other hand in front of you, tucking in all other fingers."
+            ]
+        },
+        {
+            "title": "Sister",
+            "image": "/videos/sister.webm",
+            "list": [
+                "Start with the thumb of your hand touching the side of your forehead.",
+                "Sweep that hand down to your chin.",
+                "Meet the index finger of that hand to the index finger of your other hand in front of you, tucking in all other fingers."
+            ]
+        },
+        {
+            "title": "Baby",
+            "image": "/videos/baby.webm",
+            "list": [
+                "Cradle your arms as if holding a baby.",
+                "Rock arms back and forth."
+            ]
+        },
+        {
+            "title": "Rain",
+            "image": "/videos/rain.webm",
+            "list": [
+                "Starting up near your shoulders in front of your body, open and close your fingers as if they were falling raindrops."
+            ]
+        },
+        {
+            "title": "Cat",
+            "image": "/videos/cat.webm",
+            "list": [
+                "Pinch together your thumb and pointer fingers, splaying out the other fingers on your hand.",
+                "Drag that hand up and away from your face a few inches, as if you were tracing a cat's whiskers."
+            ]
+        },
+        {
+            "title": "Dog",
+            "image": "/videos/dog.webm",
+            "list": [
+                "With your hand at your side, tap your hip a couple of times, as if you were calling a dog."
+            ]
+        },
+        {
+            "title": "House",
+            "image": "/videos/house.webm",
+            "list": [
+                "Place your arms in front of you, so your fingertips touch and your elbows are splayed out (as if your arms were the roof of a house).",
+                "Bring your hands parallel to one another as if you were holding the sides of a house.",
+                "Drag your hands down as if tracing the side walls to the ground."
+            ]
+        },
+        {
+            "title": "Store",
+            "image": "/videos/store.webm",
+            "list": [
+                "Bring your hands, wrists touching and palms facing you, to one side of your body.",
+                "Wave your hands up and out."
+            ]
+        },
+        {
+            "title": "Car",
+            "image": "/videos/car.webm",
+            "list": [
+                "Pretend to hold onto and turn a steering wheel in front of your body."
+            ]
+        },
+        {
+            "title": "Stroller",
+            "image": "/videos/stroller.webm",
+            "list": [
+                "Place both hands in front of you as if holding on to a baby stroller.",
+                "Push outward and pull back in toward your body."
+            ]
+        },
+        {
+            "title": "I Love You",
+            "image": "/videos/iloveyou.webp",
+            "list": [
+                "With one hand, lower your middle and ring finger toward your palm, keeping your thumb, pointer, and pinky fingers up."
+            ]
+        },
+        {
+            "title": "Hug",
+            "image": "/videos/hug.webp",
+            "list": [
+                "Crossing your arms in front of your body, grab either bicep. (It's OK to rock back and forth a little as you give yourself a big bear hug!)"
+                
+            ]
+        },
+        {
+            "title": "Kiss",
+            "image": "/videos/kiss.webm",
+            "list": [
+                "Squeeze the tips of your fingers together to form a point, and place that hand in front of your pursed lips.",
+                "Move hands to your cheek to plant the kiss."
+            ]
+        },
+        {
+            "title": "Cold",
+            "image": "/videos/cold.webp",
+            "list": [
+                "With your shoulders slightly raised, clench both hands in front of your body, by your shoulders. (You can shiver a little bit, too, for effect.)"
+            ]
+        },
+        {
+            "title": "Pain",
+            "image": "/videos/pain.webm",
+            "list": [
+                "Bring the pointer fingers of both hands together, tucking your other fingers into your palm.",
+                "Pull your fingers apart, then bring them back together."
+            ]
+        },
+        {
+            "title": "Open",
+            "image": "/videos/open.webm",
+            "list": [
+                "Arrange your hands so that your palms face your body and the outside edges of your hands touch.",
+                "Slide your hands apart from one another."
+            ]
+        },
+        {
+            "title": "Close",
+            "image": "/videos/close.webm",
+            "list": [
+                "Arrange your hands so that your palms face your body, and the outside edges of your hands are a few inches apart.",
+                "Slide your hands together."
+            ]
+        },
+        {
+            "title": "Cry",
+            "image": "/videos/cry.webm",
+            "list": [
+                "Point both pointer fingers outward on each hand, tucking in the rest of the fingers.",
+                "One side at a time, bring your pointer finger under your eye and slide it (as if it were a tear) down your cheek. Repeat on the other side.",
+                "Repeat step two a few times."
+            ]
+        },
+        {
+            "title": "Play",
+            "image": "/videos/play.webm",
+            "list": [
+                "Hold each hand in front of you so that your pointer and pinky fingers are sticking out, but the rest of your fingers on each hand are tucked into your palm.",
+                "Rotate each hand at your wrist a few times."
+            ]
+        },
+        {
+            "title": "Stop",
+            "image": "/videos/stop.webm",
+            "list": [
+                "Hold one hand, palm up, in front of you.",
+                "Use your other hand to bisect that palm with a chopping motion."
+            ]
+        },
+        {
+            "title": "Go",
+            "image": "/videos/go.webm",
+            "list": [
+                "Place both pointer fingers (with the rest of your fingers tucked into your hands) in front of you in opposite directions.",
+                "Roll those fingers over one another."
+            ]
+        },
+        {
+            "title": "Laugh",
+            "image": "/videos/laugh.webm",
+            "list": [
+                "Place your pointer fingers on either side of your mouth.",
+                "Drag fingers up toward your cheeks, mouth forming a smile."
+            ]
+        }
+    ]
+}

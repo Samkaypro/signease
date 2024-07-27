@@ -1,0 +1,44 @@
+.word-detail-container {
+    padding-top: 75px;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .word-detail-image {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+  }
+  
+  .word-detail-list {
+    list-style-type: none;
+    padding: 100px;
+  
+  }
+  
+  .word-detail-list li {
+    margin: 500px 0;
+  }
+
+  .word-video {
+    width: 100%;
+    height: auto;
+  
+  }
+
+  .back-button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px 0;
+    margin: 7px 0;
+    width: 90%;
+    background: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  
+  

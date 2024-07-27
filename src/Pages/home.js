@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FormControl, Button, Container, Accordion, Card } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaCog } from 'react-icons/fa';
 import Logo from "../Components/Logo";
 import Avatar from "../images/avatar.jpeg";
@@ -24,10 +23,6 @@ export function Home() {
     localStorage.setItem('name', firstName);
     setName(firstName);
     setLoggedIn(true);
-  };
-
-  const logOut = () => {
-    localStorage.removeItem('name');
   };
 
   const [loggedIn, setLoggedIn] = useState(false);
@@ -72,20 +67,27 @@ export function Home() {
     cursor: 'pointer',
   };
 
+  const topPad = {
+    paddingTop: '20px'
+  };
+
   return (
     <>
       <Container className="py-4">
         {loggedIn && (
           <>
-            <div style={headerStyle}>
-              <div style={avatarStyle}>
-                <img src={Avatar} alt="Avatar" style={avatarImgStyle} />
-              </div>
-              <div style={greetingStyle}>Welcome {name}!</div>
-              <div style={settingsStyle}>
-                <FaCog />
+            <div style={topPad}>
+              <div style={headerStyle}>
+                <div style={avatarStyle}>
+                  <img src={Avatar} alt="Avatar" style={avatarImgStyle} />
+                </div>
+                <div style={greetingStyle}>Welcome {name}!</div>
+                <div style={settingsStyle}>
+                  <FaCog />
+                </div>
               </div>
             </div>
+
             <Accordion defaultActiveKey="0">
               <div style={styles.banner}>
                 <Accordion.Toggle as="div" eventKey="0" style={styles.header}>
@@ -116,23 +118,23 @@ export function Home() {
             <Card style={styles.card}>
               <Card.Body>
                 <Link to="/tutorial" style={styles.link}>
-                <Card.Title>Tutorial</Card.Title>
-                <Card.Text>
-                  Learn how to sign Alphabet<br />
-                  from letter A to Z with a guide.
-                </Card.Text>
+                  <Card.Title>Tutorial</Card.Title>
+                  <Card.Text>
+                    Learn how to sign Alphabet<br />
+                    from letter A to Z with a guide.
+                  </Card.Text>
                 </Link>
               </Card.Body>
             </Card>
             <Card style={styles.card}>
               <Card.Body>
                 <Link to="/learningPage" style={styles.link}>
-                <Card.Title>Play game</Card.Title>
-                <Card.Text>
-                  Sign the ASL language<br />
-                  from letter A to Z without <br />
-                  a guide to earn xp.
-                </Card.Text>
+                  <Card.Title>Play game</Card.Title>
+                  <Card.Text>
+                    Sign the ASL language<br />
+                    from letter A to Z without <br />
+                    a guide to earn xp.
+                  </Card.Text>
                 </Link>
               </Card.Body>
             </Card>
@@ -204,6 +206,7 @@ const styles = {
     alignItems: 'center',
     textAlign: 'center',
     color: '#121212',
+    paddingTop: '35px',
   },
   logoContainer: {
     display: 'flex',
@@ -211,7 +214,7 @@ const styles = {
     marginBottom: '20px',
   },
   logoText: {
-    color: '#6800F4',
+    color: '#121212',
     marginLeft: '0.4em',
     fontSize: '24px',
     fontWeight: 'bold',

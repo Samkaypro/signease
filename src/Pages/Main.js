@@ -5,11 +5,13 @@ import { Navigation } from "../Components/Navigation";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Home } from "./home";
 import { LearningPage } from "./LearningPage";
-import { About } from "./About";
 import { Profile } from "./Profile";
 import { TutorialPage } from "./TutorialPage";
 import { DictionaryPage } from "./Dictionary";
-// import "./Components/FontAwesome";
+import WordPage from "./WordPage";
+import Class from "./Class";
+import ClassDetailPage from "../Components/ClassDetailPage";
+import WordDetailPage from "../Components/WordDetailPage"; 
 
 function Main() {
   return (
@@ -19,9 +21,13 @@ function Main() {
         <Switch>
           <Route exact path="/" component={Home}></Route>
           <Route exact path="/dictionary" component={DictionaryPage}></Route>
+          <Route exact path="/class" component={Class}></Route>
+          <Route exact path="/word" component={WordPage}></Route>
+          <Route path="/class/detail" component={ClassDetailPage}></Route> 
+          <Route path="/word/detail" component={WordDetailPage}></Route> 
           <Route exact path="/learningPage" component={LearningPage}></Route>
           <Route exact path="/profile" component={Profile}></Route>
-          <Route exact path ="/tutorial" component={TutorialPage}/>
+          <Route exact path="/tutorial" component={TutorialPage}></Route>
         </Switch>
       </Router>
     </Container>

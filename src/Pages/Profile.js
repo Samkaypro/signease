@@ -11,7 +11,12 @@ export function Profile(props) {
     window.location.href = '/';
   };
 
+  const topPad = {
+    paddingTop: '40px'
+  };
+
   return (
+    <div style={topPad}>
     <Container className="d-flex flex-column align-items-center py-4" style={styles.container}>
       <Card style={styles.card}>
         <Card.Body className="text-center">
@@ -39,6 +44,7 @@ export function Profile(props) {
         </Card.Body>
       </Card>
     </Container>
+    </div>
   );
 }
 

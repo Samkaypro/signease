@@ -1,0 +1,37 @@
+.word-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  padding-bottom: 100px;
+}
+
+.word-container h2 {
+  padding-top: 50px; 
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.word-box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0px 0;
+  margin: 7px 0;
+  width: 90%;
+  background: #fff;
+  text-align: left;
+}
+
+.word-box h4 {
+  color: #000;
+  margin-left: 10px;
+}
+
+.word-box a {
+  text-decoration: none;
+}
+
+.word-container h4 {
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
