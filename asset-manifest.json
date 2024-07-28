@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/signease/static/css/main.b23c0c80.chunk.css",
-    "main.js": "/signease/static/js/main.47b08423.chunk.js",
-    "main.js.map": "/signease/static/js/main.47b08423.chunk.js.map",
+    "main.js": "/signease/static/js/main.9c02ebb9.chunk.js",
+    "main.js.map": "/signease/static/js/main.9c02ebb9.chunk.js.map",
     "runtime-main.js": "/signease/static/js/runtime-main.93b34e8b.js",
     "runtime-main.js.map": "/signease/static/js/runtime-main.93b34e8b.js.map",
     "static/css/2.44d809a4.chunk.css": "/signease/static/css/2.44d809a4.chunk.css",
@@ -40,6 +40,6 @@
     "static/css/2.44d809a4.chunk.css",
     "static/js/2.60acd098.chunk.js",
     "static/css/main.b23c0c80.chunk.css",
-    "static/js/main.47b08423.chunk.js"
+    "static/js/main.9c02ebb9.chunk.js"
   ]
 }
