@@ -39,21 +39,21 @@ To get started with SignEase, follow these steps:
 Before running the application, you need to set a Node.js environment variable to ensure compatibility with certain packages. This can be done by running the following command in your terminal:
 
 **On Windows**
-
-    ```bash
-    set NODE_OPTIONS=--openssl-legacy-provider
-    ```
+ 
+ ```bash
+ set NODE_OPTIONS=--openssl-legacy-provider
+  ```
 **On macOS or Linux**
 
-    ```bash
-    export NODE_OPTIONS=--openssl-legacy-provider
-    ```
+```bash
+export NODE_OPTIONS=--openssl-legacy-provider
+```
 
 After setting the environment variable, you can start the development server with:
 
-    ```bash
-    yarn start
-    ```
+ ```bash
+ yarn start
+ ```
 
 This will run the app in the development mode. Open http://localhost:3000 to view it in your browser. The page will reload if you make edits.
 
