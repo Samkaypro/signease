@@ -24,7 +24,7 @@ To get started with SignEase, follow these steps:
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/yourusername/signease.git
+    git clone https://github.com/Samkaypro/signease.git
     cd signease
     ```
 
